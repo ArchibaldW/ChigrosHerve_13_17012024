@@ -7,7 +7,7 @@ import Form from '../form'
 import TextInput from '../../components/form/textInput'
 import Button from '../../components/form/formButton'
 
-export default function EditForm() {
+export default function EditForm({ changeEdit }) {
   const token = useSelector(getUserToken)
   const user = useSelector(getUser)
   const dispatch = useDispatch()
@@ -27,6 +27,7 @@ export default function EditForm() {
             lastName: res.lastName,
           })
         )
+        changeEdit()
       }
     } else {
       alert('Les deux champs doivent être remplis')

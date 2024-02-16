@@ -2,7 +2,7 @@ import './style.scss'
 import Accounts from '../../container/accounts'
 import PageLayout from '../../layout/pageLayout'
 import { useState } from 'react'
-import EditForm from '../../container/editForm'
+import FormEdit from '../../container/formEdit'
 import { useSelector } from 'react-redux'
 import { getUser } from '../../store/selectors'
 
@@ -26,7 +26,7 @@ export default function Profile() {
         <button className='edit-button' onClick={changeEdit}>
           Edit Name
         </button>
-        {editUp ? <EditForm /> : ''}
+        {editUp ? <FormEdit changeEdit={changeEdit}/> : ''}
       </div>
       <Accounts />
     </PageLayout>
