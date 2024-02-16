@@ -16,14 +16,6 @@ body {
   min-height: 100vh;
 }
 
-.main {
-  flex: 1;
-}
-
-.bg-dark {
-  background-color: #12002b;
-}
-
 .sr-only {
   border: 0 !important;
   clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
@@ -36,4 +28,12 @@ body {
   position: absolute !important;
   width: 1px !important;
   white-space: nowrap !important; /* 3 */
+}
+
+.d-flex {
+  display: flex;
+}
+
+.cursor-pointer{
+  cursor: pointer;
 }

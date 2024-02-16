@@ -1,12 +1,13 @@
-import Hero from '../../components/hero';
-import './style.scss';
-import Features from '../../components/features';
+import Hero from '../../components/hero'
+import './style.scss'
+import Features from '../../container/features'
+import PageLayout from '../../layout/pageLayout'
 
 export default function Home() {
   return (
-    <div className="main">
+    <PageLayout>
       <Hero />
       <Features />
-    </div>
-  );
+    </PageLayout>
+  )
 }
